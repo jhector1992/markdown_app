@@ -1,0 +1,64 @@
+$color-primary: rgb(28, 53, 136);
+$color-text: #989898;
+$color-secondary: rgb(25, 167, 84);
+$color-success: rgb(25, 167, 84);
+$color-danger: rgb(25, 167, 84);
+$color-warning: rgb(25, 167, 84);
+$color-info: rgb(25, 167, 84);
+
+body{
+
+    .navbar{
+        &.bg-light{
+            background-color: rgba(255, 255, 255, 20) !important;
+            border-bottom: solid $color-text 1px;
+        }
+    }
+
+    .spinner-border{
+        width: 5em;
+        height: 5em;
+        color: $color-primary;
+    }
+
+    table{
+        thead tr td:last-of-type, tbody tr td:last-of-type{
+            text-align: center;
+        }
+
+        .nav-link{
+            display: inline;
+
+            &:hover{
+
+                
+            }
+              
+        }
+    }
+
+    .hover{
+        //background-color: $color-secondary;
+        //font-size: 2em;
+        display: flexbox;
+
+        &:hover{
+            span.icon{
+                color: #be3c09;
+                -webkit-transform: rotate(360deg);	/* Safari & Chrome */
+                -o-transform: rotate(360deg);	/* Opera */
+                -moz-transform: rotate(360deg); /* Firefox 4 */
+                transform: rotate(360deg);
+                svg{
+                    animation-duration: 1s;
+                    //animation-name: zoomin;
+                }                
+            }
+        }
+
+        span.icon{
+            transition: all .2s ease-in-out;
+            padding: 5px;
+        }
+    }
+}
